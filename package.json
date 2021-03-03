@@ -1,0 +1,24 @@
+{
+  "name": "projectskadi",
+  "version": "1.0.0",
+  "description": "Final Project | Skadi Outdoor E-Commerce Store",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihaiUdvar/ProjectSKADI.git"
+  },
+  "keywords": [
+    "frontend",
+    "webstore",
+    "ecommerce",
+    "javascript",
+    "bootstrap"
+  ],
+  "author": "Mihai Udvar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihaiUdvar/ProjectSKADI/issues"
+  },
+  "homepage": "https://github.com/MihaiUdvar/ProjectSKADI#readme"
+}
