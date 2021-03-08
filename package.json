@@ -23,5 +23,6 @@
   "homepage": "https://github.com/MihaiUdvar/ProjectSKADI#readme",
   "dependencies": {
     "json-server": "^0.16.3"
-  }
+  },
+  "devDependencies": {}
 }
