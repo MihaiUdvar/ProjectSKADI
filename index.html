@@ -32,30 +32,33 @@
                     <a class="dropdown-item" href="#">Sleeping Bags</a>
                     <!-- <div class="dropdown-divider"></div> -->
                     <a class="dropdown-item" href="#">Backpacks</a>
-                    <a class="dropdown-item" href="#">Kitchen</a>
+                    <a class="dropdown-item" href="#">Kitchen & Food</a>
                     <a class="dropdown-item" href="#">Bikes</a>
                 </div>
-            </li>
+              </li>
               <li class="nav-item">
                   <a class="nav-link" href="#">ABOUT</a>
               </li>
-              
               <li class="nav-item">
                   <a class="nav-link" href="#">CONTACT</a>
               </li>
-              
-              <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+              <li class="nav-item px-2 pt-2 text-uppercase mb-0 position-relative d-lg-flex">
+                <div id="cart" class="d-none">
+                </div>                
+                <a href="#" class="cart position-relative " aria-label="View your shopping cart">
+                  <i class=" text-dark fas fa fa-shopping-cart fa-lg"></i>
+                  <span class="cart-basket d-flex align-items-center justify-content-center">
+                    0
+                  </span>
+                </a>               
               </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li> -->
-              <li class="nav-item">
+             
+             <li class="nav-item">
                   <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Sign In</a>                  
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Register</a>
-              </li>
+              </li> --> 
           </ul>
       </div>
 
@@ -104,74 +107,84 @@
   </nav>
 
    <div class="container">          
-       <div class="row mt-4 main1">
-         <div class=" mainInfo">
-            <h1>BECOME ONE WITH NATURE</h1>
-            <h6>SOME SMALLER TEXT</h6>
-            <button type="button" class="btn btn-primary">Shop Our Range</button>
-         </div>
+       <div class="row mt-5">
+         <div class="col-md-12">
+          <div class="box1">
+            <div class="mainInfo">
+              <h1>BECOME ONE WITH NATURE</h1>
+              <!-- <h6>Everything You Need for the Perfect Travel Experience</h6> -->
+              <button type="button" class="btn btn-light">Shop Our Range</button>
+            </div>
+           </div>   
+         </div>      
        </div> 
        
-       <div class="row justify-content-between wrapper">
-       <div class=" col-md-8 mt-4 main2">
+       <div class="row wrapper">
+       <div class="col-md-8 mt-4">
+          <div class="box2">
             <div class="mainInfo">
-               <h3>SLEEP UNDER THE STARS</h3>
-               <h6>SOME SMALLER TEXT</h6>
-               <button type="button" class="btn btn-primary">Shop Our Range</button>
-            </div>
-            
+              <h3 class="text-white" >SLEEP UNDER <br>THE STARS</h3>
+              <button type="button" class="btn btn-light">See Collection</button>
+           </div>
+          </div>        
          </div>
-         <div class="col-md-3.5 mt-4 main3">
+         <div class="col-md-4 mt-4">
+           <div class="box3">
             <div class="mainInfo">
-                <h3>UNFORGETABLE MEALS</h3>
-                <h6>SOME SMALLER TEXT</h6>
-                <button type="button" class="btn btn-primary">Shop Our Range</button>
-             </div>
+              <h3 class="text-white">UNFORGETABLE MEALS</h3>
+              <h6 class="text-white">SOME SMALLER TEXT</h6>
+              <button type="button" class="btn btn-light">Check Now</button>
+           </div>
+           </div>          
          </div>
         </div>
-         
-            <div class="row mt-4 main4">
-              <div class=" mainInfo">
-                 <h1>YOUR NEW BEST FRIEND</h1>
-                 <h6>SOME SMALLER TEXT</h6>
-                 <button type="button" class="btn btn-primary">Shop Our Range</button>
-              </div>
-            </div> 
-   </div>
 
-   <section class="">
-    <footer class="pt-4 pb-4 bg-light">
+            <div class="row mt-4 mb-4">
+              <div class="col-md-12">
+                <div class="box4">
+                  <div class="mainInfo">
+                    <h1>YOUR NEW BEST FRIEND</h1>
+                    <h6>SOME SMALLER TEXT</h6>
+                    <button type="button" class="btn btn-light">See Our Bikes</button>
+                  </div>
+                </div> 
+              </div>           
+            </div> 
+  </div>
+
+    <footer class="pt-2 pb-2 bg-light">
       <div class="container">
         <div class="row text-center align-items-center">
-          <div class="col-12 col-sm-6 col-md-4 text-sm-left">
-            <a class="navbar-brand" href="index.html">SKADI</a>
+          <div class="d-none d-md-block d-xxl-none col-12 col-sm-6 col-md-4 text-sm-left">
+            <a class="text-dark navbar-brand" href="index.html">SKADI</a>
             <img src="images/logo.svg" width="50" height="50" class="d-inline-block" alt="logo">
-            <!-- <img alt="image" src="http://via.placeholder.com/102x40/007bff/ffffff?text=L O G O" height="40"> -->
           </div>
           <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
-            © 2021 SKADI 
+            
+            <form class="form-inline">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="newsletter">
+              <button type="submit" class="btn btn-primary ml-1">SUBSCRIBE</button>
+            </form>
           </div>
-          <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+
+          <div class="col-12 col-md-4 mt-2 mt-md-0  text-md-right ">
             <a href="#">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
+              <i class="text-dark fab fa-twitter" aria-hidden="true"></i>
             </a>&nbsp;&nbsp;
             <a href="#">
-              <i class="fab fa-facebook" aria-hidden="true"></i>
+              <i class="text-dark fab fa-facebook" aria-hidden="true"></i>
             </a>&nbsp;&nbsp;
             <a href="#">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <i class="text-dark fab fa-instagram" aria-hidden="true"></i>
             </a>&nbsp;&nbsp;
             <a href="#">
-              <i class="fab fa-pinterest" aria-hidden="true"></i>
-            </a>&nbsp;&nbsp;
-            <a href="#">
-              <i class="fab fa-google" aria-hidden="true"></i>
-            </a>
+              <i class="text-dark fab fa-youtube" aria-hidden="true"></i>
+            </a>  
+            <p class="mb-0">© 2021 SKADI </p>         
           </div>
         </div>
       </div>
     </footer>
-  </section>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

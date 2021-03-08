@@ -1,38 +1,63 @@
-.container {
-  padding-top: 40px;
-}
-.main1 {
+/* .container {
+  grid-column-gap: 100px;
+  row-gap: 100px;
+} */
+.box1 {
   background-image: url(images/bikepacking_5_crop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 700px;
 }
-.main2 {
-  display: block;
+.box2 {
   background-image: url(images/tent_3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 700px 300px; */
   height: 300px;
 }
-.main3 {
+.box3 {
   background-image: url(images/cooking_6.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
 }
-.main4 {
-  background-image: url(images/patrick-hendry-AdcQe7RItx4-unsplash.jpg);
+.box4 {
+  background-image: url(images/bike_5.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: contain; */
   height: 300px;
 }
 .mainInfo {
   padding-left: 3em;
   padding-top: 3em;
+  width: 20em;
 }
-@media screen and (min-width: 600px) {
+
+.dropdown-menu a:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+ul.navbar-nav > li > a:hover {
+  color: rgba(0, 0, 255, 0.472) !important;
+}
+ul li a.cart:hover {
+  text-decoration: none;
+  color: #d60e96;
+}
+
+ul li a.cart .cart-basket {
+  font-size: 0.6rem;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  background-color: #418deb;
+  border-radius: 50%;
+}
+/* footer {
+  height: 70px;
+} */
+@media screen and (min-width: 1000px) {
   nav.navbar-expand-lg {
     padding: 0.5rem 12rem;
   }
