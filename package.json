@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Final Project | Skadi Outdoor E-Commerce Store",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "start-db": "json-server --watch api/db.json",
+    "start": "serve"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MihaiUdvar/ProjectSKADI.git"
@@ -22,7 +25,10 @@
   },
   "homepage": "https://github.com/MihaiUdvar/ProjectSKADI#readme",
   "dependencies": {
-    "json-server": "^0.16.3"
+    "bootstrap": "^4.6.0",
+    "font-awesome": "^4.7.0",
+    "json-server": "^0.16.3",
+    "serve": "^11.3.2"
   },
   "devDependencies": {}
 }

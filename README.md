@@ -22,3 +22,8 @@ Mihai Udvar
 ### Start JSON server:
 
 `$ json-server --watch api/db.json`
+
+### Start development server
+
+`$ npm install -g serve` or `$ npm install --save serve`
+`$ serve`

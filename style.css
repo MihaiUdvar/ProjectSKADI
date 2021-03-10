@@ -62,3 +62,11 @@ ul li a.cart .cart-basket {
     padding: 0.5rem 12rem;
   }
 }
+.card-title {
+  height: 2rem;
+  margin-top: 0.75rem;
+}
+/* .card-name {
+  height: 2rem;
+  margin-top: 0.75rem;
+} */
