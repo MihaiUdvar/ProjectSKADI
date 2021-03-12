@@ -1,7 +1,3 @@
-/* .container {
-  grid-column-gap: 100px;
-  row-gap: 100px;
-} */
 .box1 {
   background-image: url(images/bikepacking_5_crop.jpg);
   background-repeat: no-repeat;
@@ -59,14 +55,29 @@ ul li a.cart .cart-basket {
 } */
 @media screen and (min-width: 1000px) {
   nav.navbar-expand-lg {
-    padding: 0.5rem 12rem;
+    padding: 0.5rem 13rem;
   }
 }
 .card-title {
   height: 2rem;
   margin-top: 0.75rem;
 }
-/* .card-name {
-  height: 2rem;
-  margin-top: 0.75rem;
-} */
+img.card-img-top:hover {
+  transform: scale(2);
+  transition: all 0.2s linear;
+}
+
+/* DETAIL PAGE STYLING */
+.container-details,
+.container-admin {
+  margin-top: 5rem;
+}
+.gallery-wrap .img-big-wrap img {
+  height: auto;
+  width: 27rem;
+  display: inline-block;
+  cursor: zoom-in;
+}
+.card-details {
+  height: 100%;
+}

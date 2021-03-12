@@ -64,7 +64,7 @@
               </li> --> 
           </ul>
       </div>
-  </nav>
+</nav>
           <!-- The Modal -->
   <div class="modal" tabindex="-1" role="dialog" id="myModal">
     <div class="modal-dialog">
@@ -99,17 +99,54 @@
             <!-- Modal footer -->
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" >Customer Sign In</button>
-                <button type="submit" class="btn btn-primary" >Admin Sign In</button>
+                <button type="submit" class="btn btn-primary" onclick="location.href='admin.html';" >Admin Sign In</button>
                 <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
             </div>
         </div>
-      </div>
     </div>
+</div>
 
-   <div class="container" >          
-     <div class="row mt-5 pt-3 d-flex justify-content-center" id="sleeping-products"></div>
-       
+<div class="container container-admin ">
+  <div class="card card-body card-form">
+    <h3>Add new product</h3>
+    <div class="form-group">
+      <input
+        type="text"
+        id="title"
+        class="form-control"
+        placeholder="product title"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        id="image"
+        class="form-control"
+        placeholder="product image"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        id="price"
+        class="form-control"
+        placeholder="product price"
+      />
+    </div>
+    <div class="form-group">
+      <textarea
+        id="description"
+        class="form-control"
+        placeholder="description"
+      >
+      </textarea>
+    </div>
+    <button class="btn btn-dark btn-secondary btn-block" id="add-product">
+      Add Product
+    </button>
   </div>
+  <div id="products" class="row d-flex justify-content-center"></div>
+</div>
 
     <footer class="pt-2 pb-2 bg-light">
       <div class="container">

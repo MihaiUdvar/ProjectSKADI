@@ -148,13 +148,13 @@ class UI {
       products.forEach((product) => {
          if(product.category == "bike"){
          output += ` 
-         <div class="card m-3 " style="width: 18rem;">
+         <div class="card m-3 view " style="width: 18rem;">
             <div class="card-body">
-               <img src="${product.image}" class="card-img-top" alt="...">
+               <img src="${product.image}" class="card-img-top " alt="...">
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;

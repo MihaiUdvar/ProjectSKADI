@@ -11,7 +11,8 @@
    <title>Skadi</title>
 </head>
 <body>
-   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <div class="wrapper">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">SKADI</a>
       <img src="images/logo.svg" width="50" height="50" class="d-inline-block" alt="logo">
 
@@ -64,54 +65,130 @@
               </li> --> 
           </ul>
       </div>
-  </nav>
+    </nav>
           <!-- The Modal -->
   <div class="modal" tabindex="-1" role="dialog" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Sign In</h4>
-                <button type="button" class="close" data-dismiss="modal">×</button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form>
-                    <label class="sr-only" for="username">Username</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Sign In</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <form>
+                      <label class="sr-only" for="username">Username</label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
 
 
-                    <label class="sr-only" for="Password">Name</label>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
-                        </div>
-                        <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
-                    </div>
-                </form>
-            </div>
+                      <label class="sr-only" for="Password">Name</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                          </div>
+                          <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                      </div>
+                  </form>
+              </div>
 
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" >Customer Sign In</button>
-                <button type="submit" class="btn btn-primary" >Admin Sign In</button>
-                <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-            </div>
-        </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >Customer Sign In</button>
+                  <button type="submit" class="btn btn-primary" >Admin Sign In</button>
+                  <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+              </div>
+          </div>
       </div>
-    </div>
-
-   <div class="container" >          
-     <div class="row mt-5 pt-3 d-flex justify-content-center" id="sleeping-products"></div>
-       
   </div>
 
-    <footer class="pt-2 pb-2 bg-light">
+
+  <div class="container container-details"> 
+    <div class="card card-details">
+      <div class="row ">
+        <div class="col-md-5 border-right">
+          <article class="gallery-wrap"> 
+            <div class="img-big-wrap">
+              <div><a  href="#"><img src="images/images_products/tent_6_tipi.jpg"></a></div>
+            </div> 
+          </article> 
+        </div>
+        <aside class="col-md-7">
+          <article class="card-body p-5">
+            <h3 class="title mb-3">${product.name}</h3>
+            <h5 class="title mb-3">${product.title}${product.title}</h5>
+            <p class="price-detail-wrap"> 
+              <span class="price h3 text-warning"> 
+              <span class="currency">$</span><span class="num">1299</span>
+              </span> 
+            </p>
+            <dl class="item-property">
+              <dt>Description</dt>
+              <dd><p>${product.description}${product.description}${product.description}${product.description}${product.description}${product.description}</p></dd>
+            </dl>
+            <dl class="param param-feature">
+              <dt>Model#</dt>
+              <dd>${product.code}</dd>
+            </dl> 
+            <!-- <dl class="param param-feature">
+              <dt>Delivery</dt>
+              <dd>Russia, USA, and Europe</dd>
+            </dl>  -->
+            
+            <hr>
+            <div class="row">
+              <div class="col-sm-5">
+                <dl class="param param-inline">
+                  <dt>Quantity: </dt>
+                  <dd>
+                    <div class="field-product">
+                      <input class="quantity field-product--input" min="0" max="20" name="quantity" value="1" type="number">
+                    </div>                  
+                    <!-- <select class="form-control form-control-sm" style="width:70px;">
+                      <option> 1 </option>
+                      <option> 2 </option>
+                      <option> 3 </option>
+                    </select> -->
+                  </dd>
+                </dl>  
+              </div> 
+              <div class="col-sm-7 text-right ">Stock: 15 pcs.</div>
+              <!-- Multiple product image posibility. Not in use -->
+              <!-- <div class="col-sm-7">
+                <dl class="param param-inline">
+                    <dt>Size: </dt>
+                    <dd>
+                      <label class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <span class="form-check-label">SM</span>
+                    </label>
+                    <label class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <span class="form-check-label">MD</span>
+                    </label>
+                    <label class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <span class="form-check-label">XXL</span>
+                    </label>
+                    </dd>
+                </dl>  
+              </div>  -->
+            </div> 
+            <hr>
+            <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+            <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+          </article>
+        </aside>
+      </div> 
+    </div> 
+  </div>
+  <div class="row" style="height: 6rem;"></div>
+  <footer class="pt-2 pb-2 bg-light">
       <div class="container">
         <div class="row text-center align-items-center">
           <div class="d-none d-md-block d-xxl-none col-12 col-sm-6 col-md-4 text-sm-left">
@@ -144,11 +221,12 @@
           </div>
         </div>
       </div>
-    </footer>
+  </footer>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="src/app.js" type="module"></script>
+<script src="src/details.js" type="module"></script>
 </body>
 </html>
