@@ -1,13 +1,14 @@
 class UI {
    constructor(){
       this.productsDiv = document.getElementById('products');
-      this.tentProductsDiv = document.getElementById('tent-products')
-      this.sleepingProductsDiv = document.getElementById('sleeping-products')
       this.title = document.getElementById('title');
       this.price = document.getElementById('price');
       this.image = document.getElementById('image');
       this.description = document.getElementById('description');
       this.category = document.getElementById('category');
+      this.table = document.getElementById('table-body');
+      this.tableRow = document.getElementById('table-row');
+      this.detailsDiv = document.getElementById('detailsDiv')
    }
 
    
@@ -21,7 +22,7 @@ class UI {
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;
@@ -31,7 +32,7 @@ class UI {
 
    showTentProducts(products) {
       let output = '';
-      products.forEach(function(product){ 
+      products.forEach((product) => { 
          if(product.category == "tent"){
          output += ` 
          <div class="card m-3 " style="width: 18rem;">
@@ -40,51 +41,34 @@ class UI {
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;
-         this.tentProductsDiv.innerHTML = output;
-         }
-         else if(product.category == "sleeping"){
-            output += ` 
-            <div class="card m-3 " style="width: 18rem;">
-               <div class="card-body">
-                  <img src="${product.image}" class="card-img-top" alt="...">
-                  <h4 class="card-title">${product.name}</h4>
-                  <h6 class="card-title">${product.title} </h6>
-                  <h4 class="card-price">$ ${product.price}</h4>
-                  <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
-               </div>
-            </div>
-            `;
-            this.sleepingProductsDiv.innerHTML = output;
-            }
-         else{
-            console.log('this function works');
-         }
-      })
+         this.productsDiv.innerHTML = output;
+         }       
+      });
    }
 
-   // showSleepingProducts(products) {
-   //    let output = '';
-   //    products.forEach((product) => {
-   //       if(product.category == "sleeping"){
-   //       output += ` 
-   //       <div class="card m-3 " style="width: 18rem;">
-   //          <div class="card-body">
-   //             <img src="${product.image}" class="card-img-top" alt="...">
-   //             <h4 class="card-title">${product.name}</h4>
-   //             <h6 class="card-title">${product.title} </h6>
-   //             <h4 class="card-price">$ ${product.price}</h4>
-   //             <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
-   //          </div>
-   //       </div>
-   //       `;
-   //       this.productsDiv.innerHTML = output;
-   //       }
-   //    });
-   // }
+   showSleepingProducts(products) {
+      let output = '';
+      products.forEach((product) => {
+         if(product.category == "sleeping"){
+         output += ` 
+         <div class="card m-3 " style="width: 18rem;">
+            <div class="card-body">
+               <img src="${product.image}" class="card-img-top" alt="...">
+               <h4 class="card-title">${product.name}</h4>
+               <h6 class="card-title">${product.title} </h6>
+               <h4 class="card-price">$ ${product.price}</h4>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
+            </div>
+         </div>
+         `;
+         this.productsDiv.innerHTML = output;
+         }
+      });
+   }
 
    showBackpackProducts(products) {
       let output = '';
@@ -97,7 +81,7 @@ class UI {
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;
@@ -116,7 +100,7 @@ class UI {
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;
@@ -135,7 +119,7 @@ class UI {
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='https://google.com';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;
@@ -154,7 +138,7 @@ class UI {
                <h4 class="card-title">${product.name}</h4>
                <h6 class="card-title">${product.title} </h6>
                <h4 class="card-price">$ ${product.price}</h4>
-               <button class="btn btn-outline-success details" onclick="location.href='details.html';" id="${product.id}">DETAILS</button>
+               <button class="btn btn-outline-success details" onclick="location.href='details.html?id=${product.id}';" id="${product.id}">DETAILS</button>
             </div>
          </div>
          `;
@@ -162,6 +146,98 @@ class UI {
          } 
       });
    }
+   showProductsAdmin(products){
+      let output = '';
+      products.forEach((product) => {
+         output += ` 
+                  <tr id="table-row">
+                     <th scope="row">${product.id}</th>
+                     <td>${product.code}</td>
+                     <td>${product.name}</td>
+                     <td>${product.price}</td>  
+                     <td>${product.stock}</td>
+                     <td>${product.category}</td>
+                     <td><button type="button" class="btn btn-dark delete" id="${product.id}" data-toggle="modal" data-target="#deleteModal" >Delete</button></td>
+                  </tr>
+                  `;
+         this.table.innerHTML = output;        
+      });
+   }
+   clearFields(){ 
+   document.getElementById('code').value="";
+   document.getElementById('name').value="";
+   document.getElementById('title').value="";
+   document.getElementById('price').value="";
+   document.getElementById('stock').value="";
+   document.getElementById('category').value="";
+   document.getElementById('image').value="";
+   document.getElementById('description').value="";
+   }
+
+   alertDivAdmin(message, className){
+      let messageDiv = document.querySelector('.messageDiv');
+      messageDiv.innerHTML = `<h5 class="${className}" class="u-full-width">${message}</h5>`;
+      console.log(messageDiv);
+
+      setTimeout( () => messageDiv.innerHTML="", 3000);
+  }
+
+  showProductDetails(product){
+   let output = '';
+   
+      output += ` 
+               <div class="card card-details">
+                  <div class="row ">
+                     <div class="col-md-5 border-right">
+                        <article class="gallery-wrap"> 
+                           <div class="img-big-wrap">
+                           <div><a  href="#"><img src="${product.image}"></a></div>
+                           </div> 
+                        </article> 
+                     </div>
+                     <aside class="col-md-7">
+                        <article class="card-body p-5">
+                           <h3 class="title mb-3">${product.name}</h3>
+                           <h5 class="title mb-3">${product.title}</h5>
+                           <p class="price-detail-wrap"> 
+                           <span class="price h3 text-warning"> 
+                           <span class="currency">$</span><span class="num">${product.price}</span>
+                           </span> 
+                           </p>
+                           <dl class="item-property">
+                           <dt>Description</dt>
+                           <dd><p>${product.description}</p></dd>
+                           </dl>
+                           <dl class="param param-feature">
+                           <dt>Model#</dt>
+                           <dd>${product.code}</dd>
+                           </dl>           
+                           <hr>
+                           <div class="row">
+                           <div class="col-sm-5">
+                              <dl class="param param-inline">
+                                 <dt>Quantity: </dt>
+                                 <dd>
+                                 <div class="field-product">
+                                    <input class="quantity field-product--input" min="0" max="20" name="quantity" value="1" type="number">
+                                 </div>                  
+                                 </dd>
+                              </dl>  
+                           </div> 
+                           <div class="col-sm-7 text-right ">Stock: ${product.stock} pcs.</div>
+                           </div> 
+                           <hr>
+                           <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+                           <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+                        </article>
+                     </aside>
+                  </div> 
+               </div> 
+               `;
+      this.detailsDiv.innerHTML = output;        
+   
+}
+
 }
 
 export const ui = new UI();

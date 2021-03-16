@@ -229,18 +229,6 @@
       "image": "images/images_products/backpack_3_pacific_blue.jpg"
     },
     {
-      "id": 20,
-      "code": "B6GORDON20BK",
-      "name": "Gourdon 20",
-      "title": "20 litre waterproof backpack",
-      "price": 32,
-      "currency": "€",
-      "description": "Waterproof 20 litre backpack with roll-top closure, bungee straps and mesh pockets for added capacity, ideal for anything from adventure races to the daily commute.",
-      "category": "backpack",
-      "stock": "",
-      "image": "images/images_products/backpack_4_gourdon_black.jpg"
-    },
-    {
       "id": 21,
       "code": "B6GORDON20B",
       "name": "Gourdon 20",
@@ -733,11 +721,40 @@
       "image": "images/images_products/bike_8_transmitter.jpg"
     },
     {
+      "code": "",
+      "name": "vbtrwfb",
+      "title": "",
+      "price": "bfdbvfdbv",
+      "currency": "€",
+      "description": "",
+      "stock": "b fd",
+      "category": "",
+      "image": "",
+      "id": 62
+    },
+    {
+      "code": "vfdv",
+      "name": "cvsda",
       "title": "",
       "price": "",
+      "currency": "€",
+      "description": "",
+      "stock": "",
+      "category": "",
       "image": "",
-      "description": "      ",
-      "id": 62
+      "id": 63
+    },
+    {
+      "code": "yufuykgfuy",
+      "name": "",
+      "title": "",
+      "price": "",
+      "currency": "€",
+      "description": "",
+      "stock": "",
+      "category": "",
+      "image": "",
+      "id": 64
     }
   ]
 }

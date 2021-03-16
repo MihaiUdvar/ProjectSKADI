@@ -66,9 +66,9 @@
       </div>
 </nav>
           <!-- The Modal -->
-  <div class="modal" tabindex="-1" role="dialog" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
                 <h4 class="modal-title">Sign In</h4>
@@ -106,9 +106,52 @@
     </div>
 </div>
 
+<!-- DELETE CONFIRMATION MODAL -->
+<div class="modal" tabindex="-1" role="dialog" id="deleteModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title">Delete product from data base?</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">  
+              <h4 class="modal-title text-danger">This will permanently delete this product from data base and user pages. Proceed with care!</h4>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-success" onclick="location.href='admin.html';">Back</button>
+              <button type="submit" class="btn btn-danger">Delete</button>
+              <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
 <div class="container container-admin ">
+  <div class="messageDiv"></div>
   <div class="card card-body card-form">
     <h3>Add new product</h3>
+    <div class="form-group" id="form">
+      <input
+        type="text"
+        id="code"
+        class="form-control"
+        placeholder="product code"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        placeholder="product name"
+      />
+    </div>
     <div class="form-group">
       <input
         type="text"
@@ -120,17 +163,33 @@
     <div class="form-group">
       <input
         type="text"
-        id="image"
+        id="price"
         class="form-control"
-        placeholder="product image"
+        placeholder="product price"
       />
     </div>
     <div class="form-group">
       <input
         type="text"
-        id="price"
+        id="stock"
         class="form-control"
-        placeholder="product price"
+        placeholder="product stock"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        id="category"
+        class="form-control"
+        placeholder="product category: see dropdown menu"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        id="image"
+        class="form-control"
+        placeholder="product image path"
       />
     </div>
     <div class="form-group">
@@ -138,14 +197,31 @@
         id="description"
         class="form-control"
         placeholder="description"
-      >
-      </textarea>
+      ></textarea>
     </div>
+    
     <button class="btn btn-dark btn-secondary btn-block" id="add-product">
       Add Product
     </button>
   </div>
-  <div id="products" class="row d-flex justify-content-center"></div>
+  <div id="products" class="table-responsive mt-4">
+    <table class="table" id="table" >
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">CODE</th>
+          <th scope="col">NAME</th>
+          <th scope="col">PRICE</th>
+          <th scope="col">STOCK</th>
+          <th scope="col">CATEGORY</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+
+      </tbody>
+    </table>
+  </div>
 </div>
 
     <footer class="pt-2 pb-2 bg-light">
@@ -186,6 +262,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="src/app.js" type="module"></script>
+<!-- <script src="src/app.js" type="module"></script> -->
+<script src="src/admin.js" type="module"></script>
 </body>
 </html>
