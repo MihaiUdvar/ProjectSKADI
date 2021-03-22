@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
    <title>Skadi</title>
@@ -123,7 +123,7 @@
           <!-- Modal footer -->
           <div class="modal-footer">
               <button type="submit" class="btn btn-success" onclick="location.href='admin.html';">Back</button>
-              <button type="submit" class="btn btn-danger">Delete</button>
+              <button type="submit" class="btn btn-danger" onclick="location.href='admin.html';">Delete</button>
               <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
           </div>
       </div>
@@ -204,8 +204,8 @@
       Add Product
     </button>
   </div>
-  <div id="products" class="table-responsive mt-4">
-    <table class="table" id="table" >
+  <div id="products-admin" class="table-responsive mt-4">
+    <table class="table" id="admin-table" >
       <thead class="thead-light">
         <tr>
           <th scope="col">ID</th>
@@ -217,7 +217,7 @@
           <th></th>
         </tr>
       </thead>
-      <tbody id="table-body">
+      <tbody id="admin-table-body">
 
       </tbody>
     </table>
