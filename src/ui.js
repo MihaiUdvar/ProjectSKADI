@@ -246,7 +246,6 @@ class UI {
     let productId = "";
     for (let i = 0; i <= productsIdArr.length - 1; i++) {
       productId = productsIdArr[i];
-      console.log(productId);
 
       products.forEach((product) => {
         if (productId == product.id) {

@@ -19,7 +19,7 @@ function deleteProductLocal(e) {
     e.target.parentElement.parentElement.remove();
 
     const id = e.target.id;
-    console.log(id);
+    //console.log(id);
     const cartProductList = JSON.parse(localStorage.getItem("cart"));
     for (let i = 0; i < cartProductList.length; i++) {
       if (cartProductList[i] === id) {
@@ -39,10 +39,10 @@ function updateCartTotal() {
     let cartRow = cartRows[i];
     let priceElement = cartRow.getElementsByClassName("product-price")[0];
     let quantityElement = cartRow.getElementsByClassName("quantity-input")[0];
-    console.log(priceElement, quantityElement);
+    //console.log(priceElement, quantityElement);
     let price = parseFloat(priceElement.innerText.replace("€", ""));
     var quantity = quantityElement.value;
-    console.log(price * quantity);
+    //console.log(price * quantity);
     total = total + price * quantity;
   }
 
@@ -55,6 +55,7 @@ function updateCartTotal() {
   );
   document.getElementById("total-price").innerText =
     subTotal + postage + " " + "€";
+  updateQuantity();
 }
 
 function updateQuantity() {
