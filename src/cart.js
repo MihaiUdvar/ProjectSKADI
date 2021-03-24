@@ -2,9 +2,11 @@ import { http } from "./http.js";
 import { ui } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  http
-    .get("http://localhost:3000/products")
-    .then((data) => ui.showProductsInCart(data));
+  http.get("http://localhost:3000/products").then((data) => {
+    ui.showProductsInCart(data);
+    updateCartTotal();
+    deleteProductLocal();
+  });
 });
 
 // Delete product from cart
@@ -15,9 +17,9 @@ document
 function deleteProductLocal(e) {
   if (e.target.classList.contains("btn-danger")) {
     e.target.parentElement.parentElement.remove();
+
     const id = e.target.id;
     console.log(id);
-
     const cartProductList = JSON.parse(localStorage.getItem("cart"));
     for (let i = 0; i < cartProductList.length; i++) {
       if (cartProductList[i] === id) {
@@ -25,8 +27,8 @@ function deleteProductLocal(e) {
         localStorage.setItem("cart", JSON.stringify(cartProductList));
       }
     }
-    updateCartTotal();
   }
+  updateCartTotal();
 }
 function updateCartTotal() {
   let cartItemContainer = document.getElementsByClassName("cart-table")[0];
@@ -45,6 +47,14 @@ function updateCartTotal() {
   }
 
   document.getElementById("sub-total-price").innerText = total + " " + "€";
+  let subTotal = parseFloat(
+    document.getElementById("sub-total-price").innerText.replace("€", "")
+  );
+  let postage = parseFloat(
+    document.getElementById("shipping").innerText.replace("€", "")
+  );
+  document.getElementById("total-price").innerText =
+    subTotal + postage + " " + "€";
 }
 
 function updateQuantity() {

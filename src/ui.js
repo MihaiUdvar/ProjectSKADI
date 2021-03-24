@@ -1,5 +1,4 @@
 import { btnAddToCart } from "./details.js";
-// import { updateCartTotal } from "./cart.js";
 
 class UI {
   constructor() {
@@ -179,7 +178,7 @@ class UI {
 
   alertDivAdmin(message, className) {
     let messageDiv = document.querySelector(".messageDiv");
-    messageDiv.innerHTML = `<h5 class="${className}" class="u-full-width">${message}</h5>`;
+    messageDiv.innerHTML = `<h5 class="${className}" class="u-full-width" style="opacity:0.6;">${message}</h5>`;
     console.log(messageDiv);
 
     setTimeout(() => (messageDiv.innerHTML = ""), 3000);
@@ -187,8 +186,8 @@ class UI {
 
   showProductDetails(product) {
     let output = "";
-    output += ` 
-               <div class="card card-details">
+    output += `<div class="messageDiv"></div> 
+               <div class="card card-details ">
                   <div class="row ">
                      <div class="col-md-5 border-right">
                         <article class="gallery-wrap"> 
@@ -229,8 +228,8 @@ class UI {
                            <div class="col-sm-7 text-right ">Stock: ${product.stock} pcs.</div>
                            </div> 
                            <hr>
-                           <a href="cart.html" class="btn btn-lg btn-primary text-uppercase" id="buy-now" onclick="location.href='cart.html"> Buy now </a>
-                           <a href="#" class="btn btn-lg btn-outline-primary text-uppercase addCart" id="${product.id}"> <i class="fas fas-shopping-cart"></i> Add to cart </a>
+                           <a href="cart.html" class="btn btn-lg btn-primary text-uppercase" id="buy-now" onclick="location.href='cart.html'"> Buy now </a>
+                           <a  class="btn btn-lg btn-outline-primary text-uppercase addCart" id="${product.id}"> <i class="fas fas-shopping-cart"></i> Add to cart </a>
                         </article>
                      </aside>
                   </div> 
@@ -257,7 +256,8 @@ class UI {
                         <td>Stock: ${product.stock}</td>
                         <td><input class="form-control quantity-input" type="number" value="1" /></td>
                         <td class="text-right product-price">${product.price} €</td>
-                        <td class="text-right"><button class="btn btn-sm btn-danger" id="${product.id}"><i class="fa fa-trash"></i> </button> </td>
+                        <td class="text-right">
+                        <button class="btn btn-sm btn-danger" id="${product.id}"><i class="fa fa-trash"></i> </button> </td>
                         </tr>`;
           this.cartTable.innerHTML = output;
         }

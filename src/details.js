@@ -21,6 +21,7 @@ export function btnAddToCart() {
         // alert('Product added');
         addToCart(id);
       }
+      ui.alertDivAdmin("Product added!", "bg-success");
       addQuantityToCart();
     },
     { once: true }
