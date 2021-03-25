@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function getProducts() {
   http
-    .get("http://localhost:3000/products")
+    // .get("http://localhost:3000/products")
+    .get("./src/db.js")
     .then((data) => ui.showProducts(data));
 }
 
