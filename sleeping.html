@@ -5,13 +5,14 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"> -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Skadi</title>
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <div class="container">
      <a class="navbar-brand" href="index.html">SKADI</a>
      <img src="images/logo.svg" width="50" height="50" class="d-inline-block" alt="logo">
@@ -20,10 +21,10 @@
          <span class="navbar-toggler-icon"></span>
      </button>
 
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <div class="collapse navbar-collapse " id="navbarSupportedContent">
          <ul class="navbar-nav ml-auto topnav">
              <li class="nav-item active">
-                 <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                 <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
              </li>
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -46,6 +47,9 @@
              <li class="nav-item">
                  <a class="nav-link" href="contact.html">CONTACT</a>
              </li>
+             <li class="nav-item">
+               <a class="nav-link " type="button" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>                  
+             </li>
              <li class="nav-item px-2 pt-2 text-uppercase mb-0 position-relative d-lg-flex">
                <div id="cart" class="d-none">
                </div>                
@@ -56,13 +60,11 @@
                  </span>
                </a>               
              </li>         
-            <li class="nav-item">
-                 <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Sign In</a>                  
-             </li>
+            
          </ul>
      </div>
    </div>
-</nav>>
+</nav>
           <!-- The Modal -->
   <div class="modal" tabindex="-1" role="dialog" id="myModal">
     <div class="modal-dialog">

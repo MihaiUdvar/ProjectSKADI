@@ -5,68 +5,66 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+   <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"> -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
    <title>Skadi</title>
 </head>
 <body>
-   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-     <div class="container">
-      <a class="navbar-brand" href="index.html">SKADI</a>
-      <img src="images/logo.svg" width="50" height="50" class="d-inline-block" alt="logo">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+     <a class="navbar-brand" href="index.html">SKADI</a>
+     <img src="images/logo.svg" width="50" height="50" class="d-inline-block" alt="logo">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto topnav">
-              <li class="nav-item active">
-                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    SHOP
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item text-lg-center category_tent" href="tents.html">Tents</a>
-                  <a class="dropdown-item text-lg-center" href="sleeping.html">Sleeping Bags & Mats</a>
-                  <a class="dropdown-item text-lg-center" href="backpacks.html">Backpacks</a>
-                  <a class="dropdown-item text-lg-center" href="kitchen.html">Kitchen & Food</a>
-                  <a class="dropdown-item text-lg-center" href="lights.html">Lights</a>
-                  <a class="dropdown-item text-lg-center" href="bikes.html">Bikes</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item text-lg-center" id="category-all" href="products_all.html" >All Our Products</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-              <li class="nav-item px-2 pt-2 text-uppercase mb-0 position-relative d-lg-flex">
-                <div id="cart" class="d-none">
-                </div>                
-                <a href="cart.html" class="cart position-relative " aria-label="View your shopping cart">
-                  <i class=" text-dark fas fa fa-shopping-cart fa-lg"></i>
-                  <span class="cart-basket d-flex align-items-center justify-content-center">
-                    0
-                  </span>
-                </a>               
-              </li>
-             
+     <div class="collapse navbar-collapse " id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto topnav">
+             <li class="nav-item active">
+                 <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   SHOP
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item text-lg-center category_tent" href="tents.html">Tents</a>
+                 <a class="dropdown-item text-lg-center" href="sleeping.html">Sleeping Bags & Mats</a>
+                 <a class="dropdown-item text-lg-center" href="backpacks.html">Backpacks</a>
+                 <a class="dropdown-item text-lg-center" href="kitchen.html">Kitchen & Food</a>
+                 <a class="dropdown-item text-lg-center" href="lights.html">Lights</a>
+                 <a class="dropdown-item text-lg-center" href="bikes.html">Bikes</a>
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item text-lg-center" id="category-all" href="products_all.html" >All Our Products</a>
+               </div>
+             </li>
              <li class="nav-item">
-                  <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Sign In</a>                  
-              </li>
-              <!-- <li class="nav-item">
-                  <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Register</a>
-              </li> --> 
-          </ul>
-      </div>
-    </div>
+                 <a class="nav-link" href="#">ABOUT</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="contact.html">CONTACT</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link " type="button" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>                  
+             </li>
+             <li class="nav-item px-2 pt-2 text-uppercase mb-0 position-relative d-lg-flex">
+               <div id="cart" class="d-none">
+               </div>                
+               <a href="cart.html" class="cart position-relative " aria-label="View your shopping cart">
+                 <i class=" text-dark fas fa fa-shopping-cart fa-lg"></i>
+                 <span class="cart-basket d-flex align-items-center justify-content-center">
+                   0
+                 </span>
+               </a>               
+             </li>         
+            
+         </ul>
+     </div>
+   </div>
 </nav>
           <!-- The Modal -->
   <div class="modal" tabindex="-1" role="dialog" id="myModal">
