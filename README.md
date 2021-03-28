@@ -1,6 +1,6 @@
 # ProjectSKADI
 
-Online ecomerce platform
+This is my first complete web application. Online ecomerce platform using bootstrap and vanilla javascript.
 
 ### Project version
 
