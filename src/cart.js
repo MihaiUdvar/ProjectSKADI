@@ -2,11 +2,14 @@ import { http } from "./http.js";
 import { ui } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  http.get("http://localhost:3000/products").then((data) => {
-    ui.showProductsInCart(data);
-    updateCartTotal();
-    deleteProductLocal();
-  });
+  http
+    // .get("http://localhost:3000/products")
+    .get("https://6060b8b904b05d0017ba2dfb.mockapi.io/products")
+    .then((data) => {
+      ui.showProductsInCart(data);
+      updateCartTotal();
+      deleteProductLocal();
+    });
 });
 
 // Delete product from cart

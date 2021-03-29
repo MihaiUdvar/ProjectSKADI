@@ -192,26 +192,26 @@ class UI {
                      <div class="col-md-5 border-right">
                         <article class="gallery-wrap"> 
                            <div class="img-big-wrap">
-                           <div><a href="#"><img src="${product.image}" id="prod-img"></a></div>
+                           <div><a href="#"><img src="${product[0].image}" id="prod-img"></a></div>
                            </div> 
                         </article> 
                      </div>
                      <aside class="col-md-7">
                         <article class="card-body p-5">
-                           <h3 class="title mb-3 product-name">${product.name}</h3>
-                           <h5 class="title mb-3 product-title">${product.title}</h5>
+                           <h3 class="title mb-3 product-name">${product[0].name}</h3>
+                           <h5 class="title mb-3 product-title">${product[0].title}</h5>
                            <p class="price-detail-wrap"> 
                            <span class="price h3 text-warning"> 
-                           <span class="currency">$</span><span class="num">${product.price}</span>
+                           <span class="currency">$</span><span class="num">${product[0].price}</span>
                            </span> 
                            </p>
                            <dl class="item-property">
                            <dt>Description</dt>
-                           <dd><p>${product.description}</p></dd>
+                           <dd><p>${product[0].description}</p></dd>
                            </dl>
                            <dl class="param param-feature">
                            <dt>Model#</dt>
-                           <dd>${product.code}</dd>
+                           <dd>${product[0].code}</dd>
                            </dl>           
                            <hr>
                            <div class="row">
@@ -225,11 +225,11 @@ class UI {
                                  </dd>
                               </dl>  
                            </div> 
-                           <div class="col-sm-7 text-right ">Stock: ${product.stock} pcs.</div>
+                           <div class="col-sm-7 text-right ">Stock: ${product[0].stock} pcs.</div>
                            </div> 
                            <hr>
                            <a href="cart.html" class="btn btn-lg btn-primary text-uppercase" id="buy-now" onclick="location.href='cart.html'"> Buy now </a>
-                           <a  class="btn btn-lg btn-outline-primary text-uppercase addCart" id="${product.id}"> <i class="fas fas-shopping-cart"></i> Add to cart </a>
+                           <a  class="btn btn-lg btn-outline-primary text-uppercase addCart" id="${product[0].id}"> <i class="fas fas-shopping-cart"></i> Add to cart </a>
                         </article>
                      </aside>
                   </div> 

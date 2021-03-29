@@ -7,11 +7,8 @@ window.onload = () => {
   if (window.location.search !== "") {
     // console.log(id);
     http
-      // .get("http://localhost:3000/products/:" + id)
-      .get(
-        "https://6060b8b904b05d0017ba2dfb.mockapi.io/api/db/databaseMockapi/:" +
-          id
-      )
+      // .get("http://localhost:3000/products/" + id)
+      .get("https://6060b8b904b05d0017ba2dfb.mockapi.io/products?id=" + id)
       .then((data) => ui.showProductDetails(data));
   }
 };
