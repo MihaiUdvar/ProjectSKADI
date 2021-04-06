@@ -42,6 +42,7 @@ function addToCart(id) {
   const cartProductList = JSON.parse(localStorage.getItem("cart"));
   cartProductList.push(id);
   localStorage.setItem("cart", JSON.stringify(cartProductList));
+  ui.updateNavCartIcon();
 }
 
 export function addQuantityToCart() {

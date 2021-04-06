@@ -12,6 +12,7 @@ class UI {
     this.tableRowCart = document.getElementById("table-row-cart");
     this.detailsDiv = document.getElementById("detailsDiv");
     this.cartTable = document.getElementById("cart-table-products");
+    this.cartIcon = document.getElementById("cart-basket");
   }
 
   showProducts(products) {
@@ -262,6 +263,15 @@ class UI {
         }
       });
     }
+  }
+
+  updateNavCartIcon() {
+    const productsIdArr = JSON.parse(localStorage.getItem("cart"));
+    let counter = 0;
+    for (let i = 0; i < productsIdArr.length + 1; i++) {
+      this.cartIcon.innerHTML = counter++;
+    }
+    // console.log(counter);
   }
 }
 

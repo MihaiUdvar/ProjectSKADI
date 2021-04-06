@@ -1,4 +1,6 @@
-// import { ui } from "./ui";
+import { ui } from "./ui.js";
+
+document.addEventListener("DOMContentLoaded", ui.updateNavCartIcon());
 
 let adminLogin = document.getElementById("admin-login");
 
@@ -19,14 +21,5 @@ customerLogin.addEventListener("click", function (e) {
     window.location.href = "products_all.html";
   }
 });
-updateNavCartIcon();
-function updateNavCartIcon() {
-  let cartIcon = document.getElementsByClassName("cart-basket")[0];
-  const productsIdArr = JSON.parse(localStorage.getItem("cart"));
-  console.log(productsIdArr);
-  let counter = 0;
-  for (let i = 0; i < cart.length; i++) {
-    if (productsIdArr[i].status === "0") counter++;
-  }
-  console.log(counter);
-}
+
+// Update the cart icon with no of items
