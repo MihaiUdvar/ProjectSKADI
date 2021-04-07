@@ -85,7 +85,7 @@ img.card-img-top:hover {
 
 /* Contact page styling */
 #contacts {
-  /* background-color: #70c3be; */
+  background-image: url(./images/map2.png);
   letter-spacing: 2px;
 }
 #contacts a {
@@ -145,4 +145,59 @@ img.card-img-top:hover {
   ul.navbar-nav {
     font-size: larger;
   }
+}
+
+/* AboutUS styling */
+.box5 {
+  background-image: url(images/tent_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+.box7 {
+  background-image: url(images/team.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 550px;
+}
+h5.text-dark {
+  text-align: justify;
+}
+.skadi-pic {
+  float: left;
+  width: 250px;
+  /* shape-outside: url(images/skadi.jpg); */
+}
+.box7 > h2 {
+  padding-top: 20%;
+  text-align: center;
+  font-family: cursive;
+  color: bisque;
+}
+.box8 > h2 {
+  padding-top: 10%;
+  text-align: center;
+  font-family: cursive;
+  color: bisque;
+}
+.box9 > h2 {
+  padding-top: 10%;
+  text-align: center;
+  font-family: cursive;
+  color: bisque;
+}
+.box8 {
+  background-image: url(images/mihai.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 770px;
+}
+.box9 {
+  background-image: url(images/mascot.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 770px;
+}
+.map-bg {
+  background-image: url(./images/map2.png);
 }

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Skadi</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SKADI</a>
+      <img src="images/logo.svg" width="50" height="50" class="d-inline-block" alt="logo">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto topnav">
+          <li class="nav-item active">
+            <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              SHOP
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-lg-center category_tent" href="tents.html">Tents</a>
+              <a class="dropdown-item text-lg-center" href="sleeping.html">Sleeping Bags & Mats</a>
+              <a class="dropdown-item text-lg-center" href="backpacks.html">Backpacks</a>
+              <a class="dropdown-item text-lg-center" href="kitchen.html">Kitchen & Food</a>
+              <a class="dropdown-item text-lg-center" href="lights.html">Lights</a>
+              <a class="dropdown-item text-lg-center" href="bikes.html">Bikes</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-lg-center" id="category-all" href="products_all.html">All Our Products</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " type="button" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>
+          </li>
+          <li class="nav-item px-2 pt-2 text-uppercase mb-0 position-relative d-lg-flex">
+            <div id="cart" class="d-none">
+            </div>
+            <a href="cart.html" class="cart position-relative " aria-label="View your shopping cart">
+              <i class=" text-dark fas fa fa-shopping-cart fa-lg"></i>
+              <span class="cart-basket d-flex align-items-center justify-content-center" id="cart-basket">
+                0
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- The Modal -->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sign In</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <label class="sr-only" for="username">Username</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+              </div>
+              <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+
+
+            <label class="sr-only" for="Password">Name</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+              </div>
+              <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon2">
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" id="customer-login">Customer Sign In</button>
+          <button type="submit" class="btn btn-primary" id="admin-login">Admin Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md map-bg">  
+    <div class="row mt-5">
+      <div class="col-md-12 mt-5">
+        <div class="box5">          
+        </div>
+      </div>
+    </div>
+
+      <div class="row mt-5">
+        <div class="col-md-7 "> 
+          <img class="col-md-3 skadi-pic" src="./images/skadi.jpg">
+          <h4 class="text-dark">Skadi is the goddess of wilderness in Norse mythology, living in the highest mountains.
+            <br><br> She is connected to winter, skiing, and bowhunting, and last, but not least to Scandinavia. <br><br>
+            Skadi was born in Oslo, Norway. We drew inspiration from her strength, courage, and, last but not least,
+            skills. We love the great outdoors and being active in the wilderness with the gear that offers the
+            highest-grade, weather-protective support. We’re a family-owned business invested in crafting clean,
+            technically perfect, yet affordable equipment for everyone.</h5> <br> <br>
+            <h3> Don’t wait any longer. Get out and play!</h4>
+          </div>
+        <div class="col-md-5">
+          <div class="box7">
+            <h2>THE TEAM</h2>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <div class="box8">
+            <h2>THE FOUNDER, MIHAI</h2>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="box9">
+            <h2>OUR MASCOT, BUDDY</h2>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+      </section>
+
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="" class="form-control" placeholder="Email address" />
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="mb-4">
+        <p>
+          Prices include VAT, but excluding shipping costs. The retail price is recommended by the manufacturer.
+          Sign up for our newsletter and get a NOK 50 discount. Applies to orders of at least NOK 700. Applies to one
+          order only. You can cancel your subscription at any time. More information.
+          Free delivery of small items from NOK 999.
+        </p>
+      </section>
+
+      <section class="">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">SUPPORT CENTRE</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Returns</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Customer information</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Shipping</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Order Status</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">SKADI</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">B2B Sales</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Sponsorhip</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright
+      <a class="text-white" href="https://mdbootstrap.com/">Skadi AS</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="src/index.js" type="module"></script>
+</body>
+
+</html>
