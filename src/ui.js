@@ -247,7 +247,6 @@ class UI {
     let productId = "";
     for (let i = 0; i <= productsIdArr.length - 1; i++) {
       productId = productsIdArr[i];
-
       products.forEach((product) => {
         if (productId == product.id) {
           output += ` <tr class="table-row-cart">

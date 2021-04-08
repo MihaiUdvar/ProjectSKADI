@@ -26,7 +26,7 @@ function addNewProduct() {
   const imageValue = document.getElementById("image").value;
   const descriptionValue = document.getElementById("description").value;
 
-  let product = {
+  const product = {
     code: codeValue,
     name: nameValue,
     title: titleValue,
@@ -39,7 +39,8 @@ function addNewProduct() {
   };
 
   http
-    .post("http://localhost:3000/products", product)
+    // .post("http://localhost:3000/products", product)
+    .post("https://6060b8b904b05d0017ba2dfb.mockapi.io/products", product)
     .then((data) => getProductsAdmin());
 
   ui.clearFields();
@@ -55,8 +56,10 @@ function deleteProduct(e) {
   if (e.target.classList.contains("delete")) {
     const id = e.target.id;
     e.target.parentElement.parentElement.remove(id);
+    // const productToDelete = `https://6060b8b904b05d0017ba2dfb.mockapi.io/products?id=${id}`;
     http
-      .delete(`http://localhost:3000/products/${id}`)
+      // .delete(`http://localhost:3000/products/${id}`)
+      .delete(`https://6060b8b904b05d0017ba2dfb.mockapi.io/products?id=${id}`)
       .then((data) => getProductsAdmin())
       .catch("Error on delete!");
   }

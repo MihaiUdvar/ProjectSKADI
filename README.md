@@ -27,3 +27,7 @@ Mihai Udvar
 
 `$ npm install -g serve` or `$ npm install --save serve`
 `$ serve`
+
+### Direct Link
+
+https://skadi.netlify.app/
