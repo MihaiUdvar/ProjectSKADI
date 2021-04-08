@@ -2,13 +2,15 @@
 
 This is my first complete web application. Online ecomerce platform using bootstrap and vanilla javascript.
 
-### Project version
+At the moment the page is hosted on netlify and the json database is hosted on mockapi.io.
 
-1.0.0
+The code also contains what's necesary to deploy with npm install,
 
-### Author
+### Direct Link
 
-Mihai Udvar
+https://skadi.netlify.app/
+
+<!--
 
 ### Project init
 
@@ -26,8 +28,4 @@ Mihai Udvar
 ### Start development server
 
 `$ npm install -g serve` or `$ npm install --save serve`
-`$ serve`
-
-### Direct Link
-
-https://skadi.netlify.app/
+`$ serve` -->
