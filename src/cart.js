@@ -61,16 +61,23 @@ function updateCartTotal() {
   updateQuantity();
 }
 
+// Quantity update with minimum and maximum(max=stock) limits
 function updateQuantity() {
   let quantityInputs = document.getElementsByClassName("quantity-input");
   for (let i = 0; i < quantityInputs.length; i++) {
     let input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
   }
+
   function quantityChanged(e) {
     let input = e.target;
+    let stock = parseFloat(document.getElementById("stock").innerText);
     if (isNaN(input.value) || input.value <= 0) {
       input.value = 1;
+    }
+
+    if (input.value > stock) {
+      input.value = stock;
     }
   }
 }

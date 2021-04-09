@@ -252,8 +252,8 @@ class UI {
           output += ` <tr class="table-row-cart">
                         <td><img src="${product.image}" width="42" height="42"/> </td>
                         <td><a href='details.html?id=${product.id}'>${product.name}</a></td>
-                        <td>Stock: ${product.stock}</td>
-                        <td><input class="form-control quantity-input" type="number" value="1" /></td>
+                        <td><p> Stock:</p><p id="stock">${product.stock}</p></td>
+                        <td><input class="form-control quantity-input" type="number" value="1" max="${product.stock}"/></td>
                         <td class="text-right product-price">${product.price} €</td>
                         <td class="text-right">
                         <button class="btn btn-sm btn-danger" id="${product.id}"><i class="fa fa-trash"></i> </button> </td>
