@@ -193,7 +193,7 @@ class UI {
                      <div class="col-md-5 border-right">
                         <article class="gallery-wrap"> 
                            <div class="img-big-wrap">
-                           <div><a href="#"><img src="${product[0].image}" id="prod-img"></a></div>
+                           <div><a href="#"><img src="${product[0].image}" class="img-fluid" id="prod-img"></a></div>
                            </div> 
                         </article> 
                      </div>
