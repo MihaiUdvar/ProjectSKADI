@@ -251,7 +251,7 @@ class UI {
         if (productId == product.id) {
           output += ` <tr class="table-row-cart">
                         <td><img src="${product.image}" width="42" height="42"/> </td>
-                        <td>${product.name}</td>
+                        <td><a href='details.html?id=${product.id}'>${product.name}</a></td>
                         <td>Stock: ${product.stock}</td>
                         <td><input class="form-control quantity-input" type="number" value="1" /></td>
                         <td class="text-right product-price">${product.price} €</td>
