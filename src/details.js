@@ -47,6 +47,7 @@ function addToCart(id) {
 
 export function addQuantityToCart() {
   const quantityToCart = document.getElementById(`quantity`).value;
+
   console.log(quantityToCart);
 }
 

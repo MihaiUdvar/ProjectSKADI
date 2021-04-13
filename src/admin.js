@@ -57,10 +57,21 @@ function deleteProduct(e) {
     const id = e.target.id;
     e.target.parentElement.parentElement.remove(id);
     // const productToDelete = `https://6060b8b904b05d0017ba2dfb.mockapi.io/products?id=${id}`;
+
     http
       // .delete(`http://localhost:3000/products/${id}`)
       .delete(`https://6060b8b904b05d0017ba2dfb.mockapi.io/products?id=${id}`)
-      .then((data) => getProductsAdmin())
+      .then((data) => console.log("blabla"))
       .catch("Error on delete!");
   }
 }
+
+// async delete('https://6060b8b904b05d0017ba2dfb.mockapi.io/products') {
+//   const response = await fetch(`https://6060b8b904b05d0017ba2dfb.mockapi.io/products?id=${id}`, {
+//     method: "DELETE",
+//     headers: {
+//       "Content-type": "application/json",
+//     },
+//   });
+//   const data = await "Product deleted ...";
+// }
