@@ -1,5 +1,5 @@
 import { btnAddToCart } from "./details.js";
-import { addQuantityToCart } from "./details.js";
+// import { addQuantityToCart } from "./details.js";
 
 class UI {
   constructor() {
@@ -233,7 +233,7 @@ class UI {
                            <a href="cart.html" class="btn btn-lg btn-primary text-uppercase" id="buy-now" onclick="location.href='cart.html'"> Buy now </a>
                            <a  class="btn btn-lg btn-outline-primary text-uppercase addCart" id="${product[0].id}"> <i class="fas fas-shopping-cart"></i> Add to cart </a>
                             <hr>
-                            <iframe width=100% height="310" src="https://youtube.com/embed/${product[0].youtubeLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                        
+                           <iframe width=100% height="310" src="https://youtube.com/embed/${product[0].youtubeLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
                         </article>
                      </aside>
                   </div>                  
