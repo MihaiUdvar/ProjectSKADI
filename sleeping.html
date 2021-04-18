@@ -76,32 +76,31 @@
             </div>
             <!-- Modal body -->
             <div class="modal-body">
-                <form>
-                    <label class="sr-only" for="username">Username</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
+              <form>
+                  <label class="sr-only" for="username">Username</label>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                      </div>
+                      <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
 
 
-                    <label class="sr-only" for="Password">Name</label>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
-                        </div>
-                        <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
-                    </div>
-                </form>
-            </div>
+                  <label class="sr-only" for="Password">Name</label>
+                  <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                      </div>
+                      <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                  </div>
+              </form>
+          </div>
 
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" >Customer Sign In</button>
-                <button type="submit" class="btn btn-primary" onclick="location.href='admin.html';">Admin Sign In</button>
-                <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-            </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="customer-login">Customer Sign In</button>
+              <button type="submit" class="btn btn-primary" id="admin-login">Admin Sign In</button>
+          </div>
         </div>
       </div>
     </div>
@@ -214,5 +213,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="src/sleeping.js" type="module"></script>
+<script src="src/index.js" type="module"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // .get("http://localhost:3000/products")
     .get("https://6060b8b904b05d0017ba2dfb.mockapi.io/products")
     .then((data) => {
+      ui.updateNavCartIcon();
       ui.showProductsInCart(data);
       updateCartTotal();
       deleteProductLocal();

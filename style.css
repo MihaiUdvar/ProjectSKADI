@@ -16,7 +16,7 @@
   background-position: center;
   height: 300px;
 }
-@media (max-width: 760px) {
+@media (max-width: 770px) {
   .box3 {
     background-image: url(images/cooking_4.jpg);
     background-repeat: no-repeat;
@@ -29,6 +29,15 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
+}
+@media (max-width: 760px) {
+  .box4 {
+    background-image: url(images/bikepack_3_crop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    color: white;
+  }
 }
 .mainInfo {
   padding-left: 3em;
@@ -168,6 +177,12 @@ h5.text-dark {
   width: 250px;
   /* shape-outside: url(images/skadi.jpg); */
 }
+/* @media (max-width: 570px) {
+  .skadi-pic {
+    float: left;
+    width: 100px;
+  }
+} */
 .box7 > h2 {
   padding-top: 20%;
   text-align: center;

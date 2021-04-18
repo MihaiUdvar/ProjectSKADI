@@ -21,5 +21,3 @@ customerLogin.addEventListener("click", function (e) {
     window.location.href = "products_all.html";
   }
 });
-
-// Update the cart icon with no of items
