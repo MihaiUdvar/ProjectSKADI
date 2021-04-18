@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "code": "T1SOLOIST",
       "name": "Soloist",
       "title": "1 person backpacking tent",
@@ -14,7 +14,7 @@
       "youtubeLink": "QY-9QCnRFjc"
     },
     {
-      "id": 2,
+      "id": "2",
       "code": "T2ORDOS2",
       "name": "Ordos 2",
       "title": "Ultralight backpacking tent",
@@ -27,7 +27,7 @@
       "youtubeLink": "Ci9rZ10f-h8"
     },
     {
-      "id": 3,
+      "id": "3",
       "code": "T3VISO3",
       "name": "Viso 3",
       "title": "Backpacking tunnel tent",
@@ -41,7 +41,7 @@
 
     },
     {
-      "id": 4,
+      "id": "4",
       "code": "T4ROUNDHOUSE",
       "name": "Roundhouse",
       "title": "2-person organic cotton bell tent",
@@ -54,7 +54,7 @@
       "youtubeLink": "GSx7wLFMHWU"
     },
     {
-      "id": 5,
+      "id": "5",
       "code": "T5ZHOTA",
       "name": "Zhota",
       "title": "4 season geodesic mountain tent",
@@ -67,7 +67,7 @@
       "youtubeLink": "1ii7-Hhl_0M"
     },
     {
-      "id": 6,
+      "id": "6",
       "code": "T6PASVIK",
       "name": "Pasvik",
       "title": "4-6 Outer Tent incl. Pole",
@@ -80,7 +80,7 @@
       "youtubeLink": "1ii7-Hhl_0M"
     },
     {
-      "id": 7,
+      "id": "7",
       "code": "S1CLOUD140",
       "name": "Cloud Peak 140",
       "title": "Synthetic 1 season sleeping bag",
@@ -93,7 +93,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 8,
+      "id": "8",
       "code": "S2CLOUD300",
       "name": "Cloud Peak 300",
       "title": "3 season synthetic sleeping bag",
@@ -106,7 +106,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 9,
+      "id": "9",
       "code": "S3SKYE500",
       "name": "SkyeHigh 500",
       "title": "Lightweight 3 season duck down sleeping bag",
@@ -119,7 +119,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 10,
+      "id": "10",
       "code": "S4SKYE900",
       "name": "SkyeHigh 900",
       "title": "Lightweight 4 season duck down sleeping bag",
@@ -132,7 +132,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 11,
+      "id": "11",
       "code": "S5ALPINE800",
       "name": "AlpineDream 800",
       "title": "Mountaineering down sleeping bag",
@@ -145,7 +145,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 12,
+      "id": "12",
       "code": "S6ARCTIC1200",
       "name": "ArcticDream 1200",
       "title": "Expedition down sleeping bag",
@@ -158,7 +158,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 13,
+      "id": "13",
       "code": "S7ARCTIC1400",
       "name": "ArcticDream 1400",
       "title": "Expedition down sleeping bag",
@@ -171,7 +171,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 14,
+      "id": "14",
       "code": "S8BUNDLE",
       "name": "3 Season Sleep Bundle",
       "title": "Bundle package",
@@ -184,7 +184,7 @@
       "youtubeLink": "r0Xklgm4xSE"
     },
     {
-      "id": 15,
+      "id": "15",
       "code": "B1ARTLU10BL",
       "name": "Artlu 10",
       "title": "Running backpack",
@@ -197,7 +197,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 16,
+      "id": "16",
       "code": "B2ARTLU10R",
       "name": "Artlu 10",
       "title": "Running backpack",
@@ -210,7 +210,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 17,
+      "id": "17",
       "code": "B3LEDGE35R",
       "name": "Ledge 35",
       "title": "35 litre hiking daypack",
@@ -223,7 +223,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 18,
+      "id": "18",
       "code": "B4LEDGE35BL",
       "name": "Ledge 35",
       "title": "35 litre hiking daypack",
@@ -236,7 +236,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 19,
+      "id": "19",
       "code": "B5PACIFIC65",
       "name": "Pacific Crest 65",
       "title": "65 litre rucksack",
@@ -249,7 +249,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 21,
+      "id": "21",
       "code": "B6GORDON20B",
       "name": "Gourdon 20",
       "title": "20 litre waterproof backpack",
@@ -262,7 +262,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 22,
+      "id": "22",
       "code": "B7ALLEYCATG",
       "name": "Alleycat",
       "title": "Messenger bag",
@@ -275,7 +275,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 23,
+      "id": "23",
       "code": "B7ALLEYCATR",
       "name": "Alleycat",
       "title": "Messenger bag",
@@ -288,7 +288,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 24,
+      "id": "24",
       "code": "B8TYROL",
       "name": "Tyrol",
       "title": "20 litre waxed cotton rucksack",
@@ -301,7 +301,7 @@
       "youtubeLink": "l_wU0_k05Gg"
     },
     {
-      "id": 25,
+      "id": "25",
       "code": "M1CLOUD",
       "name": "Cloud Base",
       "title": "Inflatable sleeping mat",
@@ -314,7 +314,7 @@
       "youtubeLink": "RY23hRGx8Q8"
     },
     {
-      "id": 26,
+      "id": "26",
       "code": "M2AIRO",
       "name": "Airo 180",
       "title": "Lightweight self-inflating camping mat",
@@ -327,7 +327,7 @@
       "youtubeLink": "RY23hRGx8Q8"
     },
     {
-      "id": 27,
+      "id": "27",
       "code": "M3NUMO",
       "name": "Numo",
       "title": "Inflatable lightweight sleeping mat",
@@ -340,7 +340,7 @@
       "youtubeLink": "RY23hRGx8Q8"
     },
     {
-      "id": 28,
+      "id": "28",
       "code": "M4NAPSTER",
       "name": "Napster",
       "title": "Closed cell foam camping mat",
@@ -353,7 +353,7 @@
       "youtubeLink": "RY23hRGx8Q8"
     },
     {
-      "id": 29,
+      "id": "29",
       "code": "M5DUMO",
       "name": "Dumo",
       "title": "Comfortable inflatable camping mat",
@@ -366,7 +366,7 @@
       "youtubeLink": "RY23hRGx8Q8"
     },
     {
-      "id": 30,
+      "id": "30",
       "code": "H1VIPER",
       "name": "Viper",
       "title": "Head torch",
@@ -379,7 +379,7 @@
       "youtubeLink": "L5d6VL2hGAA"
     },
     {
-      "id": 31,
+      "id": "31",
       "code": "H2QARK",
       "name": "Qark",
       "title": "Rechargeable head torch",
@@ -392,7 +392,7 @@
       "youtubeLink": "L5d6VL2hGAA"
     },
     {
-      "id": 32,
+      "id": "32",
       "code": "H3PRISM",
       "name": "Prism",
       "title": "Waterproof head torch",
@@ -405,7 +405,7 @@
       "youtubeLink": "L5d6VL2hGAA"
     },
     {
-      "id": 33,
+      "id": "33",
       "code": "H4MANTA",
       "name": "Manta",
       "title": "Rechargeable head torch",
@@ -418,7 +418,7 @@
       "youtubeLink": "L5d6VL2hGAA"
     },
     {
-      "id": 34,
+      "id": "34",
       "code": "H5FLARE",
       "name": "Flare",
       "title": "Folding usb solar panel",
@@ -431,7 +431,7 @@
       "youtubeLink": "L5d6VL2hGAA"
     },
     {
-      "id": 35,
+      "id": "35",
       "code": "K1MUG650",
       "name": "MytiMug 650",
       "title": "Titanium cooking mug",
@@ -444,7 +444,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 36,
+      "id": "36",
       "code": "K2MUG400",
       "name": "MytiMug 400",
       "title": "400 ml titanium mug",
@@ -457,7 +457,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 37,
+      "id": "37",
       "code": "K3ALIPOTS",
       "name": "AliPots",
       "title": "4 piece cooking pan set",
@@ -470,7 +470,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 38,
+      "id": "38",
       "code": "K4MYTISTAX",
       "name": "MytiStax",
       "title": "Titanium 3 piece pan set",
@@ -483,7 +483,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 39,
+      "id": "39",
       "code": "K5TIMOGOS",
       "name": "TiMigos",
       "title": "Titanium cutlery set",
@@ -496,7 +496,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 40,
+      "id": "40",
       "code": "K6TIFOON",
       "name": "Tifoon",
       "title": "Titanium spork",
@@ -509,7 +509,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 41,
+      "id": "41",
       "code": "K7TIPSY",
       "name": "Tipsy",
       "title": "Stainless steel hip flask",
@@ -522,7 +522,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 42,
+      "id": "42",
       "code": "K8DAYTRIP",
       "name": "Daytripper",
       "title": "Stainless steel insulated flask",
@@ -535,7 +535,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 43,
+      "id": "43",
       "code": "K9SINK",
       "name": "Onsen",
       "title": "Collapsible camping sink",
@@ -548,7 +548,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 44,
+      "id": "44",
       "code": "K10BOTA",
       "name": "Bota",
       "title": "2l hydration bladder",
@@ -561,7 +561,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 45,
+      "id": "45",
       "code": "K11SAWYER",
       "name": "Sawyer",
       "title": "Water filtration bottle",
@@ -574,7 +574,7 @@
       "youtubeLink": "DrUHZKLdq10"
     },
     {
-      "id": 46,
+      "id": "46",
       "code": "K12REALTHAI",
       "name": "Real Turmat",
       "title": "Thai red curry stew",
@@ -587,7 +587,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 47,
+      "id": "47",
       "code": "K13REALSALMON",
       "name": "Real Turmat",
       "title": "Salmon pasta with cream",
@@ -600,7 +600,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 48,
+      "id": "48",
       "code": "K14REALPORK",
       "name": "Real Turmat",
       "title": "Pulled pork with rice",
@@ -613,7 +613,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 49,
+      "id": "49",
       "code": "K15REALMUSLI",
       "name": "Real Turmat",
       "title": "Chocolate musli",
@@ -626,7 +626,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 50,
+      "id": "50",
       "code": "K16REALPASTA",
       "name": "Real Turmat",
       "title": "Pasta Bolognese",
@@ -639,7 +639,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 51,
+      "id": "51",
       "code": "K17REALENERGY",
       "name": "Real Energy",
       "title": "Chocolate bar energy",
@@ -652,7 +652,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 52,
+      "id": "52",
       "code": "K18REALENERGY",
       "name": "Real Energy",
       "title": "Chocolate bar energy",
@@ -665,7 +665,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 53,
+      "id": "53",
       "code": "K18REALENERGY",
       "name": "Real Energy",
       "title": "Chocolate bar energy",
@@ -678,7 +678,7 @@
       "youtubeLink": "_4vnIBhkcZo"
     },
     {
-      "id": 54,
+      "id": "54",
       "code": "BIKE01SONDERTWIN",
       "name": "Sonder Twin",
       "title": "Titanium road tandem",
@@ -691,7 +691,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 55,
+      "id": "55",
       "code": "BIKE02SONDERVIRFORTIS",
       "name": "VIR FORTIS GX",
       "title": "Full carbon fat bike",
@@ -704,7 +704,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 56,
+      "id": "56",
       "code": "BIKE03COLIBRIAL",
       "name": "COLIBRI AL RIVAL",
       "title": "Aluminium disc brake endurance road bike",
@@ -717,7 +717,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 57,
+      "id": "57",
       "code": "BIKE04BROKENROAD",
       "name": "BROKEN ROAD GX",
       "title": "Titanium hardtail mountain bike",
@@ -730,7 +730,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 58,
+      "id": "58",
       "code": "BIKE05CAMINOAL",
       "name": "CAMINO AL RIVAL",
       "title": "Drop bar gravel bike",
@@ -743,7 +743,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 59,
+      "id": "59",
       "code": "BIKE06EVOLGX",
       "name": "EVOL GX",
       "title": "Fast and agile aggressive 29er",
@@ -756,7 +756,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 60,
+      "id": "60",
       "code": "BIKE07SIGNALST",
       "name": "SIGNAL ST GX",
       "title": "Steel aggressive hardtail 29er mountain bike",
@@ -769,7 +769,7 @@
       "youtubeLink": "HRmHsKJA6k0"
     },
     {
-      "id": 61,
+      "id": "61",
       "code": "BIKE08TRANSMITTER",
       "name": "TRANSMITTER GX",
       "title": "Aggressive hard tail mountain bike",
@@ -780,19 +780,6 @@
       "category": "bike",
       "image": "images/images_products/bike_8_transmitter.jpg",
       "youtubeLink": "HRmHsKJA6k0"
-    },
-    {
-      "code": "csdgaveq",
-      "name": "cfadgsrse",
-      "title": "gvtrwfcg",
-      "price": "",
-      "currency": "€",
-      "description": "",
-      "stock": "xaSFZCXW",
-      "category": "",
-      "image": "XCFESWZA",
-      "youtubeLink": "HRmHsKJA6k0",
-      "id": 62
     }
   ]
 }
