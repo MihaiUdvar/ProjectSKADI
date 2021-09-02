@@ -4,7 +4,7 @@ This is my first complete web application. Online e-comerce platform using boots
 
 At the moment the page is hosted on netlify and the json database is hosted on mockapi.io.
 
-The code also contains what's necesary to deploy with npm install,
+The code also contains what's necesary to deploy with npm.
 
 ### Direct Link
 
