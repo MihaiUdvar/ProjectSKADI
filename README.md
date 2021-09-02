@@ -10,6 +10,8 @@ The code also contains what's necesary to deploy with npm.
 
 https://skadi.netlify.app/
 
+And functionality presentation: https://www.dropbox.com/s/h0tucfu1jejack1/SKADI%20Website%20Presentation%20.pdf?dl=0
+
 <!--
 
 ### Project init
