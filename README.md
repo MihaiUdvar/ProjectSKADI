@@ -1,6 +1,6 @@
 # ProjectSKADI
 
-This is my first complete web application. Online e-comerce platform using bootstrap and vanilla javascript. Fully functional up to checkout.
+This is my first complete web application. Online e-comerce platform using bootstrap and vanilla javascript. Fully functional(and responsive) up to checkout.
 
 At the moment the page is hosted on netlify and the json database is hosted on mockapi.io.
 
